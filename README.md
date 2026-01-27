@@ -715,14 +715,16 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project will be licensed under the MIT License - .
 
 ---
 
 ## Authors
 
-- **Your Name** - *Initial work* - [GitHub](https://github.com/yourusername)
-
+- **Rishi**
+- **Honey**
+- **Tanvi**
+- **Nikhil**
 ---
 
 ## Acknowledgments
@@ -736,7 +738,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-For support, email support@hcldine.com or create an issue in this repository.
+For support, email rishirajprajapati22@gmail.com or create an issue in this repository.
 
 ---
 
