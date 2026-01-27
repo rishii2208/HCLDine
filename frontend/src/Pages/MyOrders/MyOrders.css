@@ -1,0 +1,268 @@
+.my-orders {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.my-orders h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.no-orders {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.no-orders p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.no-orders button {
+    padding: 12px 30px;
+    background: tomato;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.no-orders button:hover {
+    background: #e04a3a;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.order-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-card > .order-header,
+.order-card > .order-details,
+.order-card > .track-btn {
+    display: flex;
+}
+
+.order-card > :not(.order-expanded) {
+    display: flex;
+}
+
+.order-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    flex: 2;
+}
+
+.order-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.order-info {
+    flex: 1;
+}
+
+.order-id {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.order-items {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.order-items-summary {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.order-date {
+    font-size: 13px;
+    color: #555;
+    margin: 4px 0;
+}
+
+.order-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.order-total {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.order-count {
+    font-size: 12px;
+    color: #666;
+}
+
+.order-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.track-btn {
+    padding: 12px 24px;
+    background: #ffe1dc;
+    color: tomato;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.track-btn:hover {
+    background: tomato;
+    color: white;
+}
+
+/* Expanded Order Details */
+.order-expanded {
+    width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.order-items-list {
+    margin-bottom: 20px;
+}
+
+.order-items-list h4,
+.delivery-info h4 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.order-items-list table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.order-items-list th,
+.order-items-list td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.order-items-list th {
+    background: #f9f9f9;
+    font-weight: 600;
+    color: #555;
+}
+
+.order-items-list td {
+    color: #333;
+}
+
+.order-summary {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.summary-row.total {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.delivery-info {
+    background: #fff8f6;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffe1dc;
+}
+
+.delivery-info p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .order-card {
+        text-align: center;
+    }
+    
+    .order-header {
+        flex-direction: column;
+    }
+    
+    .order-details {
+        align-items: center;
+    }
+    
+    .track-btn {
+        width: 100%;
+    }
+    
+    .order-items-list table {
+        font-size: 12px;
+    }
+    
+    .order-items-list th,
+    .order-items-list td {
+        padding: 6px 8px;
+    }
+}
