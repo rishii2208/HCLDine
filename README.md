@@ -4,7 +4,7 @@ A full-stack food ordering platform built with React, Node.js, Express, and Fire
 
 [![Frontend Deploy](https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel)](https://hcl-dine.vercel.app)
 [![Backend Deploy](https://img.shields.io/badge/Backend-Render-46E3B7?logo=render)](https://backend.onrender.com)
-[![Firebase](https://img.shields.io/badge/Database-Firebase-orange?logo=firebase)](https://firebase.google.com)
+[![Firebase](https://img.shields.io/badge/Database-Firestore-orange?logo=firebase)](https://firebase.google.com)
 
 ---
 
